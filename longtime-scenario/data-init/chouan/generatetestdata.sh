@@ -8,9 +8,9 @@ DB_PASSWORD=postgres
 
 DB_NAME=atrs
 
-DB_HOST01=cn-performance-db1.XXXX.ap-northeast-1.rds.amazonaws.com
-DB_HOST02=cn-performance-db2.XXXX.ap-northeast-1.rds.amazonaws.com
-DB_HOST03=cn-performance-db3.XXXX.ap-northeast-1.rds.amazonaws.com
+DB_HOST01=cn-autobuild-db1.XXXX.ap-northeast-1.rds.amazonaws.com
+DB_HOST02=cn-autobuild-db2.XXXX.ap-northeast-1.rds.amazonaws.com
+DB_HOST03=cn-autobuild-db3.XXXX.ap-northeast-1.rds.amazonaws.com
 
 DB_PORT=5432
 

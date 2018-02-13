@@ -9,7 +9,10 @@ generatetestdata.sh　★RDS初期化
 
 
 insertDynamodb.py　★DynamoDBデータ追加
-①22,23,24行目を使用しているAWS環境に合うように修正する。
+①22,23,24行目を使用しているリージョン名、リソース名、テーブル名をAWS環境に合うように修正する。
+session = Session(region_name='ap-northeast-1')
+dynamodb = session.resource('dynamodb')
+table = dynamodb.Table('ShardAccount')
 
 【実行】
 ①RDS初期化
