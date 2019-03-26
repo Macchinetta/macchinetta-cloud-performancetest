@@ -30,7 +30,7 @@
           </elementProp>
           <elementProp name="IPADDR" elementType="Argument">
             <stringProp name="Argument.name">IPADDR</stringProp>
-            <stringProp name="Argument.value">internal-cn-ALB-XXXX.ap-northeast-1.elb.amazonaws.com</stringProp>
+            <stringProp name="Argument.value">internal-alb-xxxxxxxxxxxx.ap-northeast-1.elb.amazonaws.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PORT" elementType="Argument">
@@ -50,7 +50,7 @@
           </elementProp>
           <elementProp name="THREADS" elementType="Argument">
             <stringProp name="Argument.name">THREADS</stringProp>
-            <stringProp name="Argument.value">500</stringProp>
+            <stringProp name="Argument.value">334</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="LIMIT_DAY" elementType="Argument">
