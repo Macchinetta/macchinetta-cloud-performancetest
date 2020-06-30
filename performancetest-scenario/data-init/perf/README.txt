@@ -1,30 +1,27 @@
-y€”õz
-generatetestdata.sh@šRDS‰Šú‰»
-‡@4s–Ú‚ðŠÂ‹«‚É‡‚¤ƒpƒX‚ÉC³‚·‚é
+ã€æº–å‚™ã€‘
+generatetestdata.shã€€â˜…RDSåˆæœŸåŒ–
+â‘ 4è¡Œç›®ã‚’ç’°å¢ƒã«åˆã†ãƒ‘ã‚¹ã«ä¿®æ­£ã™ã‚‹
 
-‡AˆÈ‰º‚Ì3si10,11,12s–Új‚ðŽg—p‚µ‚Ä‚¢‚éAWSŠÂ‹«‚É‡‚¤‚æ‚¤‚ÉC³‚·‚é
-@EDB_HOST01
-@EDB_HOST02
-@EDB_HOST03
+â‘¡ä»¥ä¸‹ã®3è¡Œï¼ˆ10,11,12è¡Œç›®ï¼‰ã‚’ä½¿ç”¨ã—ã¦ã„ã‚‹AWSç’°å¢ƒã«åˆã†ã‚ˆã†ã«ä¿®æ­£ã™ã‚‹
+ã€€ãƒ»DB_HOST01
+ã€€ãƒ»DB_HOST02
+ã€€ãƒ»DB_HOST03
 
 
-insertDynamodb.py@šDynamoDBƒf[ƒ^’Ç‰Á
-‡@22,23,24s–Ú‚ðŽg—p‚µ‚Ä‚¢‚éƒŠ[ƒWƒ‡ƒ“–¼AƒŠƒ\[ƒX–¼Aƒe[ƒuƒ‹–¼‚ðAWSŠÂ‹«‚É‡‚¤‚æ‚¤‚ÉC³‚·‚éB
+insertDynamodb.pyã€€â˜…DynamoDBãƒ‡ãƒ¼ã‚¿è¿½åŠ 
+â‘ 22,23,24è¡Œç›®ã‚’ä½¿ç”¨ã—ã¦ã„ã‚‹ãƒªãƒ¼ã‚¸ãƒ§ãƒ³åã€ãƒªã‚½ãƒ¼ã‚¹åã€ãƒ†ãƒ¼ãƒ–ãƒ«åã‚’AWSç’°å¢ƒã«åˆã†ã‚ˆã†ã«ä¿®æ­£ã™ã‚‹ã€‚
 session = Session(region_name='ap-northeast-1')
 dynamodb = session.resource('dynamodb')
 table = dynamodb.Table('ShardAccount')
 
-yŽÀsz
-‡@RDS‰Šú‰»
+ã€å®Ÿè¡Œã€‘
+â‘ RDSåˆæœŸåŒ–
 ./generatetestdata.sh
 
-‡ADynamoDBƒf[ƒ^’Ç‰Á
-DynamoDB‚Ìƒf[ƒ^‚ðAWSƒRƒ“ƒ\[ƒ‹‚©‚çíœ
+â‘¡DynamoDBãƒ‡ãƒ¼ã‚¿è¿½åŠ 
+DynamoDBã®ãƒ‡ãƒ¼ã‚¿ã‚’AWSã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã‹ã‚‰å‰Šé™¤
 
-DynamoDB‚Ìƒf[ƒ^‚ð’Ç‰Á
+DynamoDBã®ãƒ‡ãƒ¼ã‚¿ã‚’è¿½åŠ 
 python insertDynamodb.py
-¦’·ˆÀŽŽŒ±‚Ìê‡‚Í1–œŒ‚Ì“o˜^‚È‚Ì‚ÅA‘æˆêˆø”‚É10000‚ðŽw’è‚µ‚ÄŽÀs
-@python insertDynamodb.py 10000
-
-
-
+â€»é•·å®‰è©¦é¨“ã®å ´åˆã¯1ä¸‡ä»¶ã®ç™»éŒ²ãªã®ã§ã€ç¬¬ä¸€å¼•æ•°ã«10000ã‚’æŒ‡å®šã—ã¦å®Ÿè¡Œ
+ã€€python insertDynamodb.py 10000
